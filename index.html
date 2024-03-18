@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Age Calculator App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="first-calendar">
+        <div class="calendar-item">
+          <h4>Day</h4>
+          <input
+            type="number"
+            id="day"
+            class="bordered-value"
+            placeholder="DD"
+          />
+          <span class="validation-message" id="day-error"></span>
+        </div>
+        <div class="calendar-item">
+          <h4>Month</h4>
+          <input
+            type="number"
+            id="month"
+            class="bordered-value"
+            placeholder="MM"
+          />
+          <span class="validation-message" id="month-error"></span>
+        </div>
+        <div class="calendar-item">
+          <h4>Year</h4>
+          <input
+            type="number"
+            id="year"
+            class="bordered-value"
+            placeholder="YYYY"
+          />
+          <span class="validation-message" id="year-error"></span>
+        </div>
+      </div>
+      <div class="second-calendar">
+        <h1><span id="result-years">--</span> years</h1>
+        <h1><span id="result-months">--</span> months</h1>
+        <h1><span id="result-days">--</span> days</h1>
+      </div>
+
+      <form id="age-form">
+        <input type="submit" value="Calculate Age" />
+      </form>
+      <div id="error-message" class="error-message"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
